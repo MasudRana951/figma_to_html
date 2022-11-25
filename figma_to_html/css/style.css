@@ -1,0 +1,538 @@
+/* all common css start */
+/* root variable start here */
+:root{
+    --white: #fff;
+    --primary: #007f5f;
+    /* fonts */
+    --poppins: 'Poppins', sans-serif;
+    --nunito_sans: 'Nunito Sans', sans-serif
+}
+/* root variable end here */
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul, li, ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ a:hover{
+    text-decoration: none;
+ }
+/* all common css end */
+
+/* navbar start here */
+#navbar{
+    background: var(--white);
+}
+
+#navbar #navbarNav .navbar-nav .nav-item .nav-link{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #616161;
+    margin-left: 20px;
+}
+
+#navbar #navbarNav .navbar-nav .nav-item .nav-link:hover{
+  color: aqua;
+}
+
+.nav_btn{
+    
+}
+
+.nav_btn a{
+    background: var(--primary);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+    /* navbar end here */
+
+/* banner part start here */
+
+#banner{
+    background: url(../images/banner.jpg) no-repeat center/cover;
+}  
+#banner .overlay{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 134px 0;
+}  
+#banner .banner_info{
+    padding-right: 163px;
+}  
+
+#banner .banner_info .search_box{
+    width: 825px;
+    padding: 24px 26px;
+    margin-top: 60px;
+    background: var(--white);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 0px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 65px;
+
+}
+
+#banner .banner_info .search_box .item{
+    display: flex;
+}
+
+#banner .banner_info .search_box .item .text select{
+    font-family: var(--nunito_sans);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #292929;
+}
+
+#banner .banner_info .search_box .item .text  select{
+    width: 100%;
+    border: none;
+}
+
+#banner .banner_info .search_box .item .text  select option{
+    
+}
+#banner .banner_info .search_box .item input{
+    width: 100%;
+    border: none;
+    color: aqua;
+}
+#banner .banner_info .search_box .item .text input::placeholder{
+    margin-top: 8px;
+    font-family: var(--nunito_sans);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6A6A6A;
+}
+
+#banner .banner_info .search_box .item svg{
+    stroke: var(--primary);
+}
+
+#banner .banner_info .search_box .search button{
+    background: var(--primary);
+    border-radius: 10px;
+    padding: 30px;
+    color: var(--white);
+    stroke: var(--white);
+    cursor: pointer;
+    border: none;
+}
+
+
+
+#banner .banner_info .info{}  
+#banner .banner_info .info h1{
+    font-family: var(--poppins);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}  
+#banner .banner_info .info p{
+    font-family: var(--poppins);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.7;
+}  
+#banner .banner_info .info a{
+    background: var(--primary);
+    border-radius: 17px;
+    padding: 16px 35px;
+    font-family: var(--poppins);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+}  
+    /* banner part end here */
+
+    /* travel benifite start here */
+    #travel_benifite{
+        padding: 150px 0px;
+    }
+    #travel_benifite .travel_benifite_text{}
+
+    #travel_benifite .travel_benifite_text h3{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #1E1E1E;
+    }
+    #travel_benifite .travel_benifite_text p{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: #616161;
+        padding: 0px 209px;
+    }
+    /* travel benifite end here */
+
+    /* services part start here */
+    #services{}
+    #services .service_container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #services .service_container .item{
+        width: 363px;
+        height: 341px;
+        background: var(--white);
+        padding: 79px 74.45px 47px 44.59px;
+        margin-bottom: 30px;
+    }
+    #services .service_container .item:hover{
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+        border-radius: 14px;
+    }
+    #services .service_container .item .icon{
+        width: 84.18px;
+        height: 75px;
+        background: rgba(0, 127, 95, 0.1);
+        border-radius: 14px;
+        margin-bottom: 42px;
+    }
+    #services .service_container .item .icon a{
+        padding: 17px 24px;
+    }
+    #services .service_container .item .icon a i{
+        font-size: 40px;
+    }
+    #services .service_container .item h3{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #1E1E1E;
+    }
+    #services .service_container .item p{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #616161;
+        padding-right: 10px;
+    }
+    /* services part end here */
+
+    /* destination part start here */
+    #destination{
+        padding-bottom: 152px;
+    }
+    #destination .destination_container{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+    #destination .destination_item{
+        width: 370px;
+        height: 592px;
+        padding: 34px 10px 42px 10px;
+        background: #FFFFFF;
+        margin-left: 0px;
+       
+        
+    }
+
+    #destination .destination_item:hover{
+        box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+    }
+
+    #destination .destination_text{}
+    #destination .destination_text h3{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #1E1E1E;
+    }
+    #destination .destination_text p{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: #616161;
+        padding-bottom: 85px;
+    }
+    #destination .destination_images {
+      
+    }
+    #destination .destination_images img {
+        width: 329px;
+        height: 203px;
+        border-radius: 14px;
+        padding-bottom: 24px;
+    }
+    #destination .destination_imagess .rating_stars{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    #destination .destination_image .rating_stars i{
+        color: #FF8B00;
+    }
+
+    #destination .destination_images .rating_stars p{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #FF8B00;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    #destination .destination_images .rating_info{
+        display: flex;
+    }
+    #destination .destination_images .rating_info h3{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #1E1E1E;
+    }
+    #destination .destination_images .rating_info p{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #616161;
+    }
+    #destination .destination_images .destination_info h5{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #616161;
+        padding-bottom: 24px;
+    }
+    #destination .destination_images .destination_info h5 span{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #1E1E1E;
+    }
+
+    
+    #destination .destination_images .destination_info button {
+        border: 1px solid #007F5F;
+        border-radius: 17px;
+        background: var(--white);
+    }
+
+    #destination .destination_images .destination_info button:hover {
+        border: 1px solid #007F5F;
+        border-radius: 17px;
+        background: var(--primary);
+    }
+
+    #destination .destination_images .destination_info button a{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        color: var(--primary);
+        padding: 10px 35px;
+    }
+
+    #destination .destination_images .destination_info button:hover a{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        color: var(--white);
+        padding: 10px 35px;
+    }
+    /* destination part end here */
+
+    /* discover part start here */
+    #discover{
+        padding: 150px 0px;
+        background: rgba(30, 30, 30, 0.05);
+    }
+    #discover .discover_text_container{
+        margin-top: 60px;
+    }
+    #discover .discover_text_container h4{
+        font-family: var(--poppins);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.2px;
+
+    color: #1E1E1E;
+    }
+    #discover .discover_text_container p{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #616161;
+        padding-right: 77px;
+    }
+    #discover .discover_text_container ul{
+        padding-right: 105px;
+    }
+    #discover .discover_text_container ul .list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 5px;
+    }
+    #discover .discover_text_container ul .list i{
+        margin-top: 7px;
+        margin-right: 5px;
+    }
+
+    #discover .discover_text_container li{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #616161;
+    }
+    #discover .discover_text_container button{
+        border: none; 
+        margin-top: 40px;
+    }
+    #discover .discover_text_container button a{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--white);
+        padding: 16px 35px;
+        background: #007F5F;
+        border-radius: 17px;
+    }
+
+    #discover .discover_image_container{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    #discover .discover_image_container .discover_image_item{
+        width: 270px;
+        height: 315px;
+        background: var(--white);
+        border-radius: 17px;
+        padding: 62px 32px;
+        margin-bottom: 10px;
+    }
+
+    #discover .discover_image_container .discover_image_item:hover{
+        width: 270px;
+        height: 315px;
+        background: var(--primary);
+        border-radius: 17px;
+        padding: 62px 32px;
+        margin-bottom: 10px;
+    }
+    #discover .discover_image_container .discover_image_item .icon_container{
+        background: var(--white);
+        border-radius: 14px;
+        width: 74px;
+        height: 78px;
+    }
+    #discover .discover_image_container .discover_image_item .icon_container i{
+        padding: 22px 20px;
+        font-size: 40px;
+    }
+    #discover .discover_image_container .discover_image_item h3{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+        letter-spacing: 0.2px;
+        color: black;
+    }
+    #discover .discover_image_container .discover_image_item:hover h3{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+        letter-spacing: 0.2px;
+        color: var(--white);
+    }
+
+    #discover .discover_image_container .discover_image_item p{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 38px;
+        letter-spacing: 0.2px;
+        color: black;
+    }
+
+    #discover .discover_image_container .discover_image_item:hover p{
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 38px;
+        letter-spacing: 0.2px;
+        color: var(--white);
+    }
+    /* discover part end here */
